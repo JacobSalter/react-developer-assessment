@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table-wrapper{
+  width:900px;
+  height:60vh
+}
+
+.posts-table{
+  width:100%;
+}
+
+.posts-table th.left,
+.posts-table td.left {
+  text-align: left;
+}
+
+.posts-table th.right,
+.posts-table td.right {
+  text-align: right;
+}
+
+.posts-table .title{
+  max-width: 350px;
+}
