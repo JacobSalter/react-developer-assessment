@@ -12,18 +12,26 @@ code {
     monospace;
 }
 
-.table-wrapper{
-  width:900px;
-  height:60vh
+.table-wrapper {
+  width: 900px;
+  max-width: 90%;
+  min-height: 60vh
 }
 
-.posts-table{
-  width:100%;
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
 }
 
-.posts-table th.left,
-.posts-table td.left {
-  text-align: left;
+.posts-table .title {
+  max-width: 350px;
+}
+
+.posts-table td,
+.posts-table th {
+  padding: 10px;
+  border-bottom: 1px solid black;
 }
 
 .posts-table th.right,
@@ -31,6 +39,7 @@ code {
   text-align: right;
 }
 
-.posts-table .title{
-  max-width: 350px;
+.posts-table th.left,
+.posts-table td.left {
+  text-align: left;
 }

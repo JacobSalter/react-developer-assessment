@@ -188,11 +188,9 @@ const App: React.FC = () => {
               <tbody>
                 {postsOnPage?.map((post, i) => {
                   return (
-                    <tr key={`posts-${post.id}`}>
+                    <Box as="tr" key={`posts-${post.id}`}>
                       <td className="left title">
-                        <Text>
-                          {i + 1} - {post.title}
-                        </Text>
+                        <Text>{post.title}</Text>
                       </td>
                       <td className="left">
                         <Text>{post.author.name}</Text>
@@ -200,7 +198,7 @@ const App: React.FC = () => {
                       <td className="right">
                         <Text>{dayjs(post.publishDate).format('DD-MM-YYYY')}</Text>
                       </td>
-                    </tr>
+                    </Box>
                   );
                 })}
               </tbody>
